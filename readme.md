@@ -5,3 +5,10 @@ Teste realizado apenas com
 * HTML
 * CSS
 * JavaScript 
+
+
+Contatos:
+
+Email: plazari96@gmail.com
+
+Linkedin: https://linkedin.com/in/plazari15
