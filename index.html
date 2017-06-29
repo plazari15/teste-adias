@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste ADias</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <a class="navbar-brand">Teste ADias</a>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Página Inicial</a> </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- FIM NAV -->
+
+<!-- Explicação do Projeto -->
+<div class="container">
+    <div class="row">
+        <h2>Calculadora de Impostos</h2>
+        <p>Esta calculadora tem por objetivo calcular os impostos realizando os descontos com base nos seus rendimentos e
+            gastos com médicos e outros serviços. Tentando ser o mais fiel possível a realidade.</p>
+    </div>
+
+    <div class="row">
+        <h3>Como Funciona o Cálculo?</h3>
+        <ul>
+            <li>20% Sobre os rendimentos Bancários</li>
+            <li>Rendimentos até R$ 8000 - Insento</li>
+            <li>Rendimentos entre R$ 8000 e R$ 24000 - 15%</li>
+            <li>Rendimentos Acima de  R$ 24000 - 20%</li>
+            <li>Demais Rendimentos - 10%</li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Calculadora</h3>
+            <form method="post" id="formCalculadora">
+                <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                    <label for="exampleInputEmail1">Nome</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-6 col-lg-6">
+                    <label for="exampleInputEmail1">Rendimentos Bancários</label>
+                    <input type="text" class="form-control currency" name="rendimentos_bancario" id="exampleInputEmail1" min="0" placeholder="Rendimentos Bancários">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-6 col-lg-6">
+                    <label for="exampleInputEmail1">Rendimentos de Salário / Serviço</label>
+                    <input type="text" class="form-control currency" id="exampleInputEmail1" name="rendimentos_salario" min="0" placeholder="Rendimentos Bancários">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-6 col-lg-6">
+                    <label for="exampleInputEmail1">Gastos Médicos</label>
+                    <input type="text" class="form-control currency" id="exampleInputEmail1" min="0" name="gastos_medicos" placeholder="Gastos Médicos">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-6 col-lg-6">
+                    <label for="exampleInputEmail1">Gastos Educacionais</label>
+                    <input type="text" class="form-control currency" id="exampleInputEmail1" min="0" name="gastos_educacionais" placeholder="Gastos Educacionais">
+                </div>
+
+                <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                    <label for="exampleInputEmail1">Outros Rendimentos</label>
+                    <input type="text" class="form-control currency" name="outros" id="exampleInputEmail1" min="0" placeholder="Outros Rendimentos">
+                </div>
+
+                <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                    <button class="btn btn-lg btn-success" id="calcular">Calcular Imposto</button>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="col-md-6">
+            <h3>Como Funciona o Cálculo?</h3>
+            <ul>
+                <li>20% Sobre os rendimentos Bancários</li>
+                <li>Rendimentos até R$ 8000 - Insento</li>
+                <li>Rendimentos entre R$ 8000 e R$ 24000 - 15%</li>
+                <li>Rendimentos Acima de  R$ 24000 - 20%</li>
+                <li>Demais Rendimentos - 10%</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!-- Fim Explicação -->
+
+
+
+<!-- Carrega os Scripts -->
+<script src="assets/jquery/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.maskMoney.min.js"></script>
+<script src="assets/js/principal.js"></script>
+</body>
+</html>
