@@ -11,4 +11,4 @@ Contatos:
 
 Email: plazari96@gmail.com
 
-Linkedin: https://linkedin.com/in/plazari15
+Linkedin: https://linkedin.com/in/plazari
